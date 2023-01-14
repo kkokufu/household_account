@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <title>家計簿</title>
+    </head>
+    <body>
+        <p>予算：</p><input id="budget">
+        <p>残高：</p><p id="balance">0</p>
+
+        <div class="wrapper">
+            <!-- xxxx年xx月を表示 -->
+            <h1 id="header"></h1>
+        
+            <!-- ボタンクリックで月移動 -->
+            <div id="next-prev-button">
+                <button id="prev" onclick="prev()">‹</button>
+                <button id="next" onclick="next()">›</button>
+            </div>
+        
+            <!-- カレンダー -->
+            <div id="calendar"></div>
+            <br>
+            品名<input id="product">
+            価格<input id="price">
+
+            <p>日付にリンクをつける</p>
+            <p>リンクから出費を入力させる</p>
+        </div>
+
+        <script src="../js/index.js"></script>
+    </body>
+</html>
